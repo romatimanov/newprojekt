@@ -250,6 +250,13 @@ var swiper = new Swiper(".price-swiper", {
         600: {
             slidesPerView: 2,
             slidesPerColumn: 1,
+            spaceBetween: 60,
+            width: 600
+        },
+
+        770: {
+            slidesPerView: 2,
+            slidesPerColumn: 1,
             spaceBetween: 65,
             width: 600
         },
