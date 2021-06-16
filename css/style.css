@@ -2443,6 +2443,12 @@
             height: 420px;
             column-count: 2;
         }
+        .ui-widget input,
+        .ui-widget select,
+        .ui-widget textarea,
+        .ui-widget button {
+            line-height: 27px;
+        }
         .accardeon__right {
             width: 80%;
         }
@@ -2727,6 +2733,12 @@
         .acordeon__list {
             height: 100%;
             column-count: 3;
+        }
+        .ui-widget input,
+        .ui-widget select,
+        .ui-widget textarea,
+        .ui-widget button {
+            line-height: 32px;
         }
         .accord .ui-accordion-content {
             padding: 1em 0.2em;
