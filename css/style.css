@@ -3435,6 +3435,7 @@
             min-height: 69px;
         }
         .accardeon__left {
+            margin: 0;
             margin-top: 54px;
         }
         .artist__title {
@@ -3452,7 +3453,7 @@
             height: 31px;
         }
         .portret-img {
-            width: 116%;
+            width: 100%;
         }
         .artist__text {
             line-height: 32px;
