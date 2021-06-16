@@ -281,23 +281,23 @@ var swiper = new Swiper(".price-swiper", {
 });
 
 initImg('#image img', [
-    'img/hero3.png',
-    'img/hero2.png',
+    'img/hero3.jpg',
+    'img/hero2.jpg',
     'img/hero.jpg',
 
 ]);
 
 initImg('#test img', [
-    'img/hero31025.png',
-    'img/hero21025.png',
-    'img/hero1025.png',
+    'img/hero31025.jpg',
+    'img/hero21025.jpg',
+    'img/hero1025.jpg',
 
 ]);
 
 initImg('#tablet img', [
-    'img/hero3769.png',
-    'img/hero2769.png',
-    'img/hero769.png',
+    'img/hero3769.jpg',
+    'img/hero2769.jpg',
+    'img/hero769.jpg',
 
 ]);
 
