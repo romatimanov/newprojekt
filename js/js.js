@@ -539,3 +539,58 @@ window.addEventListener('DOMContentLoaded', function() {
         })
     })
 })
+
+const modalLinks = document.querySelectorAll('.modal-link');
+const body = document.querySelector('body');
+
+let unlock = true;
+
+const timeout = 500;
+
+if (modalLinks.length > 0) {
+    for (let index = 0; index < modalLinks.length; index++) {
+        const modalLink = modalLinks[index];
+        modalLink.addEventListener("click", function(e) {
+            const modalName = modalLink.getAttribute('href').replace('#', '');
+            const curentModal = document.getElementById(modalName);
+            modalOpen(curentModal);
+            e.preventDefault();
+        });
+    }
+}
+
+const modalCloseIcon = document.querySelectorAll('.modal-close');
+if (modalCloseIcon.length > 0) {
+    for (let index = 0; index < modalCloseIcon.length; index++) {
+        const el = modalCloseIcon[index];
+        el.addEventListener('click', function(e) {
+            modalClose(el.closest('.modal'));
+            e.preventDefault();
+        });
+    }
+}
+
+function modalOpen(curentModal) {
+    if (curentModal && unlock) {
+        const modalActive = document.querySelector('.modal.open');
+        if (modalActive) {
+            modalClose(modalActive, false);
+        }
+
+        curentModal.classList.add('open');
+        curentModal.addEventListener("click", function(e) {
+            if (!e.target.closest('.modal__body')) {
+                modalClose(e.target.closest('.modal'));
+            }
+        });
+    }
+}
+
+function modalClose(modalActive, doUnlock = true) {
+    if (unlock) {
+        modalActive.classList.remove('open');
+        if (doUnlock) {
+            bodyunlock();
+        }
+    }
+}
