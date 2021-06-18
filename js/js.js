@@ -449,3 +449,93 @@ new JustValidate('.contacts__form', {
         }
     },
 });
+
+window.addEventListener('DOMContentLoaded', function() {
+
+    document.querySelectorAll('.click__rus').forEach(function(button) {
+        button.addEventListener('click', function(element) {
+
+            document.querySelector('.rus-content-active').classList.add('rus-content')
+
+            let offsetTop = document.querySelector('.rus-content-active').offsetTop;
+            if (window.matchMedia("(max-width: 665px)").matches) {
+                scroll({
+                    top: offsetTop - 15,
+                    behavior: "smooth"
+                });
+            }
+        })
+    })
+})
+
+window.addEventListener('DOMContentLoaded', function() {
+
+    document.querySelectorAll('.click__french').forEach(function(button) {
+        button.addEventListener('click', function(element) {
+
+            document.querySelector('.french-content-active').classList.add('french-content')
+
+            let offsetTop = document.querySelector('.french-content-active').offsetTop;
+            if (window.matchMedia("(max-width: 665px)").matches) {
+                scroll({
+                    top: offsetTop - 15,
+                    behavior: "smooth"
+                });
+            }
+        })
+    })
+})
+
+window.addEventListener('DOMContentLoaded', function() {
+
+    document.querySelectorAll('.click__ger').forEach(function(button) {
+        button.addEventListener('click', function(element) {
+
+            document.querySelector('.ger-content-active').classList.add('ger-content')
+
+            let offsetTop = document.querySelector('.ger-content-active').offsetTop;
+            if (window.matchMedia("(max-width: 665px)").matches) {
+                scroll({
+                    top: offsetTop - 15,
+                    behavior: "smooth"
+                });
+            }
+        })
+    })
+})
+
+window.addEventListener('DOMContentLoaded', function() {
+
+    document.querySelectorAll('.click__ital').forEach(function(button) {
+        button.addEventListener('click', function(element) {
+
+            document.querySelector('.ital-content-active').classList.add('ital-content')
+
+            let offsetTop = document.querySelector('.ital-content-active').offsetTop;
+            if (window.matchMedia("(max-width: 665px)").matches) {
+                scroll({
+                    top: offsetTop - 15,
+                    behavior: "smooth"
+                });
+            }
+        })
+    })
+})
+
+window.addEventListener('DOMContentLoaded', function() {
+
+    document.querySelectorAll('.click__nider').forEach(function(button) {
+        button.addEventListener('click', function(element) {
+
+            document.querySelector('.nider-content-active').classList.add('nider-content')
+
+            let offsetTop = document.querySelector('.nider-content-active').offsetTop;
+            if (window.matchMedia("(max-width: 665px)").matches) {
+                scroll({
+                    top: offsetTop - 15,
+                    behavior: "smooth"
+                });
+            }
+        })
+    })
+})
