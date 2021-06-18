@@ -2497,6 +2497,10 @@ input[type="tel"]::placeholder {
         max-width: 571px;
         margin: 0;
     }
+    .myslide .caption {
+        left: 13px;
+        bottom: 19px;
+    }
     .gallery__navigation-btn {
         width: 25%;
     }

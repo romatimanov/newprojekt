@@ -723,7 +723,7 @@
                                         <source media="(max-width: 520px)" srcset="img/modal320.png">
                                         <source media="(max-width: 890px)" srcset="img/modal768.png">
                                         <source media="(max-width: 1123px)" srcset="img/modal1024.png">
-                                        <img src="img/modal.png">
+                                        <img src="img/modal.png" alt="Женщина с граблями">
                                     </picture>
                                 </div>
                                 <div class="modal__content">
@@ -733,7 +733,7 @@
                                     <p class="modal__text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
                                 </div>
                                 <a href="##" class="modal-close">
-                                    <img src="img/x.svg">
+                                    <img src="img/x.svg" alt="close">
                                 </a>
                             </div>
                         </div>
@@ -6271,10 +6271,10 @@
                     <div class="mymap" id="map"></div>
                     <h2 class="contacts__call">Заказать обратный звонок</h2>
                     <div class="contacts__form">
-                        <form action="#" class="form__contacts">
-                            <input class="contacts__input" name="имя" type="text" placeholder="имя*" data-validate-field="name">
+                        <form method="POST" id="form" class="form__contacts" enctype="multipart/form-data" onsubmit="send(event, 'send.php')">
+                            <input class="contacts__input" name="name" type="text" placeholder="имя*" data-validate-field="name">
                             <input class="contacts__input" name="tel" type="tel" placeholder="телефон*" data-validate-field="tel" data-validate-rules="phone" inputmode="text">
-                            <button class="btn contacts__btn">Заказать</button>
+                            <button class="btn contacts__btn" type="submit">Заказать</button>
                         </form>
                     </div>
                     <div class="contacts__link">
