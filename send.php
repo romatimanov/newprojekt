@@ -32,7 +32,7 @@ try {
     $mail->setFrom('spongeee@yandex.ru', 'Имя'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('spongeee@yandex.ru');  
+    $mail->addAddress('romatimanov77@gmail.com.');  
     $mail->addAddress('youremail@gmail.com'); // Ещё один, если нужен
 
     // Прикрипление файлов к письму
