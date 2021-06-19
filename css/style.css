@@ -565,7 +565,8 @@ input::-webkit-input-placeholder {
     background-image: url(../img/header/bala.png);
 }
 
- ::-webkit-scrollbar {
+
+/*== ::-webkit-scrollbar {
     width: 3px;
     height: 0;
     background-color: var(--main-color);
@@ -575,6 +576,27 @@ input::-webkit-input-placeholder {
     background-color: var(--black-color);
     border-radius: 9em;
     box-shadow: inset 1px 1px 10px var(--black-color);
+}
+*/
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.simplebar-track,
+.simplebar-vertical {
+    top: 0;
+    width: 5px !important;
+    background-color: var(--black-color);
+    box-shadow: inset 1px 1px 10px var(--black-color);
+}
+
+.simplebar-scrollbar::before {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--main-color);
 }
 
 .hero__content {
@@ -1741,6 +1763,10 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
 .editions__laptop {
     display: none;
 }
@@ -2546,7 +2572,7 @@ input[type="tel"]::placeholder {
     }
     .editions__content {
         display: flex;
-        justify-content: right;
+        justify-content: flex-start;
     }
     .editions__swiper-item {
         width: 280px;
