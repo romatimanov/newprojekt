@@ -6272,7 +6272,7 @@
                     <div class="mymap" id="map"></div>
                     <h2 class="contacts__call">Заказать обратный звонок</h2>
                     <div class="contacts__form">
-                        <form method="POST" id="form" class="form__contacts" enctype="multipart/form-data" onsubmit="send(event, 'send.php')">
+                        <form method="POST" action="mail.php" id="form" class="form__contacts" enctype="multipart/form-data">
                             <input class="contacts__input" name="name" type="text" placeholder="имя*" data-validate-field="name" aria-label="Введите имя">
                             <input class="contacts__input" name="tel" type="tel" placeholder="телефон*" data-validate-field="tel" data-validate-rules="phone" inputmode="text" aria-label="Введите телефон">
                             <button class="btn contacts__btn" type="submit">Заказать</button>
